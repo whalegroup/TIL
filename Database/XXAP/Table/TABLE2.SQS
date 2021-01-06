@@ -1,0 +1,23 @@
+-- ===============================================+
+-- |FILENAME : Table2
+-- |DESCRIPTION
+-- |ENTITY   :  
+-- |NOTES    : 
+-- |HISTORY 
+-- |新規作成  : v1.0
+-- ===============================================+
+
+PROMPT ** CREATE SEQUENCE Table2 **
+
+CREATE SEQUENCE Synonym2.Table2_S
+INCREMENT BY 1
+START WITH 1
+MAXVALUE 999999
+NOMINVALUE
+NOCYCLE
+CACHE 20
+NOORDER
+/
+
+
+

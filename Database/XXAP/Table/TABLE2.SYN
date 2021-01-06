@@ -1,0 +1,21 @@
+-- ===============================================+
+-- |FILENAME : Table2
+-- |DESCRIPTION
+-- |ENTITY   : 
+-- |NOTES    
+-- |HISTORY 
+-- |新規作成  : v1.0
+-- ===============================================+
+
+PROMPT ** CREATE SYNONYM Table2 **
+
+CREATE SYNONYM Synonym1.Table2 FOR Synonym2.Table2
+/
+
+
+
+
+
+
+
+
