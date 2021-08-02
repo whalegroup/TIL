@@ -1,0 +1,19 @@
+-- ===============================================+
+-- |FILENAME : Table2
+-- |DESCRIPTION
+-- |ENTITY   : 
+-- |NOTES    
+-- |HISTORY 
+-- |新規作成  : v1.0
+-- ===============================================+
+
+PROMPT ** ALTER TABLE Table2 **
+
+ALTER TABLE Synonym2.Table2 ADD CONSTRAINT Table2 PRIMARY KEY(
+COLUMN1
+) USING INDEX
+TABLESPACE 테이블스페이스명
+/
+
+
+

@@ -1,0 +1,57 @@
+#include<stdio.h>
+#include<cs50.h>
+
+const int GRADE_NUMBER = 9;
+const int SCORES[GRADE_NUMBER] = {95,90,85,80,75,50,65,60,0};
+const char*GRADES[GRADE_NUMBER] = {"A+","A","B+","B","C+","C","D+","D","F"};
+
+void text(void);        //함수 1 : 제시문만 출력해주는 함수
+
+int main(void) {       //함수 2 : 메인 함수
+    text();            // 제시문 출력
+    while(1){        // 성적 입력
+        int score = get_int("성적을 입력하세요 ( 0 ~ 100) : ");
+        if(score <=100 && score >=95){
+            printf("학점은 %s 입니다.\n",GRADES[0]);
+        } else if(score<=94 && score >=90){
+            printf("학점은 %s 입니다.\n",GRADES[1]);
+        }else if(score<=89 && score >=85){
+            printf("학점은 %s 입니다.\n",GRADES[2]);
+        }else if(score<=84 && score >=80){
+            printf("학점은 %s 입니다.\n",GRADES[3]);
+        }else if(score<=79 && score >=75){
+            printf("학점은 %s 입니다.\n",GRADES[4]);
+        }else if(score<=74 && score >=70){
+            printf("학점은 %s 입니다.\n",GRADES[5]);
+        }else if(score<=69 && score >=65){
+            printf("학점은 %s 입니다.\n",GRADES[6]);
+        }else if(score<=64 && score >=60){
+            printf("학점은 %s 입니다.\n",GRADES[7]);
+        }else if(score<=59 && score >=0){
+            printf("학점은 %s 입니다.\n",GRADES[8]);
+        }else if(score == 999){
+            break;
+        } else {
+            printf(" 성적을 올바르게 입력하세요! (0 ~ 100)\n");
+        }
+    }
+}
+    void text(void) {
+        printf("-------학점 프로그램-------\n");
+        printf("종료를 원하면 \"999\" 를 입력하세요\n");
+        printf("[학점 테이블]\n");
+        printf("점수 : ");
+
+        for(int i=0; i<GRADE_NUMBER;i++) {
+            printf("%d\t", SCORES[i]);
+         }
+
+        printf("\n");
+        printf("학점 : ");
+
+        for(int i=0;i<GRADE_NUMBER;i++) {
+            printf("%s\t", GRADES[i]);
+        }
+        printf("\n");
+
+    }

@@ -1,0 +1,21 @@
+-- ===============================================+
+-- |FILENAME : Table2
+-- |DESCRIPTION
+-- |ENTITY   : 
+-- |NOTES    : 
+-- |HISTORY 
+-- |新規作成  : v1.0
+-- ===============================================+
+
+PROMPT ** CREATE TABLE Table2 **
+
+CREATE TABLE Synonym2.Table2
+(
+	COLUMN1     VARCHAR2(6) NOT NULL,
+     ...
+)
+TABLESPACE 테이블스페이스명
+/
+COMMENT ON COLUMN Synonym2.VENDORS_ALL.COLUMN1 IS '...'
+/
+
